@@ -11,3 +11,12 @@ def is_isogram(string):
         return True
     else:
         return False
+
+"""
+An alternative:
+def is_isogram(string):
+    string = string.lower()
+    for letter in string:
+        if string.count(letter) > 1: return False
+    return True
+"""
