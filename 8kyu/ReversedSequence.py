@@ -4,18 +4,14 @@ Build a function that returns an array of integers from n to 1 where n>0.
 Example : n=5 --> [5,4,3,2,1]
 """
 def reverse_seq(n):
-    n_array = []
-    rev_n_array =[]
-    for i in range(1,(n+1)):
-        n_array.append(i)
-    n_array.reverse()
-    print(n_array)
+    print(list(range(n,0,-1)))
 
 num = 5
 
 reverse_seq(num)
 
 # Learned that .reverse() just reverses an array, but can't be printed
+# Range method range(start, stop, step)
 
 """
 Alternative Solution:
