@@ -20,4 +20,9 @@ def high_and_low(numbers):
 
 
 
-high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+def high_and_low1(numbers):
+    hl = [int(n) for n in numbers.split(" ")] #[8, 3, -5, 42, -1, 0, 0, -9, 4, 7, 4, -4]
+    return f"{max(hl)} {min(hl)}"
+
+
+high_and_low1("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
